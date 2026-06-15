@@ -6,44 +6,44 @@
 <title>FIT SET Dashboard</title>
 <style>
 *{box-sizing:border-box;margin:0;padding:0}
-body{font-family:system-ui,sans-serif;background:#F5F5F5;color:#1A1A1A;font-size:14px}
-.nav{background:#fff;border-bottom:3px solid #E8642A;padding:0 32px;display:flex;align-items:center;justify-content:space-between;height:66px;box-shadow:0 2px 8px rgba(0,0,0,.06)}
+body{font-family:system-ui,sans-serif;background:#F2F2F0;color:#1A1A1A;font-size:14px}
+.nav{background:#0D2137;border-bottom:3px solid #E8642A;padding:0 32px;display:flex;align-items:center;justify-content:space-between;height:66px}
 .nav img{height:40px}
 .nw{background:#E8642A;color:#fff;font-size:11px;font-weight:700;padding:4px 12px;border-radius:4px}
-.nl{font-size:11px;font-weight:600;text-transform:uppercase;color:#999}
-.dh{background:#fff;padding:24px 32px 0;border-bottom:1px solid #EBEBEB}
+.nl{font-size:11px;font-weight:600;text-transform:uppercase;color:rgba(255,255,255,.6)}
+.dh{background:#0D2137;padding:16px 32px 0;border-bottom:3px solid #E8642A}
 .de{font-size:10px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:#E8642A;margin-bottom:4px}
-.dt{font-size:24px;font-weight:800;color:#1A1A1A;margin-bottom:10px}
-.db{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:16px}
-.dg{font-size:11px;padding:4px 12px;border-radius:20px;background:#F5F5F5;border:1px solid #E5E5E5;color:#666;font-weight:500}
+.dt{font-size:24px;font-weight:800;color:#2B8FD4;margin-bottom:10px}
+.db{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:14px}
+.dg{font-size:11px;padding:4px 12px;border-radius:20px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.15);color:rgba(255,255,255,.7);font-weight:500}
 .ct{display:flex;gap:0}
-.cb{padding:11px 24px;font-size:13px;font-weight:600;cursor:pointer;border-radius:6px 6px 0 0;color:#999;background:#F5F5F5;border:1px solid #E5E5E5;border-bottom:none;margin-right:4px;line-height:1.3}
-.cb small{display:block;font-size:10px;font-weight:400;color:#bbb;margin-top:2px}
-.cb:hover{background:#FDEEE7;color:#C05520}
+.cb{padding:11px 24px;font-size:13px;font-weight:600;cursor:pointer;border-radius:6px 6px 0 0;color:rgba(255,255,255,.5);background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);border-bottom:none;margin-right:4px;line-height:1.3}
+.cb small{display:block;font-size:10px;font-weight:400;color:rgba(255,255,255,.35);margin-top:2px}
+.cb:hover{background:rgba(255,255,255,.12);color:#fff}
 .cb.active{background:#E8642A;color:#fff;border-color:#E8642A}
-.cb.active small{color:rgba(255,255,255,.7)}
-.mn{padding:24px 32px;background:#fff}
-.og{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-bottom:24px}
-.mt{background:#fff;border-radius:8px;padding:16px 18px;border:1px solid #EBEBEB;border-top:4px solid #E8642A;box-shadow:0 1px 4px rgba(0,0,0,.04)}
-.ml{font-size:10px;font-weight:700;letter-spacing:.07em;text-transform:uppercase;color:#aaa;margin-bottom:7px}
+.cb.active small{color:rgba(255,255,255,.75)}
+.mn{padding:16px 32px;background:#F2F2F0}
+.og{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-bottom:16px}
+.mt{background:#0D2137;border-radius:8px;padding:14px 18px;border:none;border-top:4px solid #E8642A}
+.ml{font-size:10px;font-weight:700;letter-spacing:.07em;text-transform:uppercase;color:rgba(255,255,255,.5);margin-bottom:7px}
 .mv{font-size:26px;font-weight:800}
-.c0{color:#1A1A1A}.cd{color:#DC2626}.cw{color:#D97706}.co{color:#16A34A}
-.sl{font-size:10px;font-weight:700;letter-spacing:.09em;text-transform:uppercase;color:#bbb;margin-bottom:12px;display:flex;align-items:center;gap:10px}
-.sl::after{content:"";flex:1;height:1px;background:#EBEBEB}
-.cr{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:22px}
-.cbt{display:flex;flex-direction:column;align-items:flex-start;padding:12px 14px;border-radius:8px;border:2px solid #EBEBEB;background:#fff;cursor:pointer;min-width:112px;max-width:150px;box-shadow:0 1px 3px rgba(0,0,0,.04)}
-.cbt:hover{border-color:#E8642A}
-.cbt.active{border-color:#E8642A;background:#FFF5F0}
-.cc{font-size:16px;font-weight:800;color:#1A1A1A;line-height:1.1}
-.cbt.active .cc{color:#C05520}
-.cn{font-size:10px;color:#aaa;margin-top:4px;line-height:1.3}
+.c0{color:#fff}.cd{color:#DC2626}.cw{color:#D97706}.co{color:#16A34A}
+.sl{font-size:11px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:#0D2137;margin-bottom:12px;display:flex;align-items:center;gap:10px}
+.sl::after{content:"";flex:1;height:2px;background:#0D2137;opacity:.15}
+.cr{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:14px}
+.cbt{display:flex;flex-direction:column;align-items:flex-start;padding:10px 12px;border-radius:8px;border:2px solid rgba(255,255,255,.08);background:#0D2137;cursor:pointer;min-width:108px;max-width:148px}
+.cbt:hover{border-color:#E8642A;background:#122840}
+.cbt.active{border-color:#E8642A;background:#122840}
+.cc{font-size:16px;font-weight:800;color:#fff;line-height:1.1}
+.cbt.active .cc{color:#2B8FD4}
+.cn{font-size:10px;color:rgba(255,255,255,.45);margin-top:4px;line-height:1.3}
 .cp{margin-top:9px;font-size:10px;font-weight:700;padding:3px 8px;border-radius:4px}
 .pcc{background:#FEE2E2;color:#991B1B}.pcw{background:#FEF3C7;color:#92400E}.pco{background:#DCFCE7;color:#166534}
 .pn{display:none}.pn.active{display:block}
-.kr{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-bottom:16px}
-.kc{background:#fff;border-radius:8px;padding:14px 16px;border:1px solid #EBEBEB;box-shadow:0 1px 3px rgba(0,0,0,.04)}
+.kr{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-bottom:12px}
+.kc{background:#0D2137;border-radius:8px;padding:12px 14px;border:none}
 .kca{border-left:4px solid #E8642A}.kcd{border-left:4px solid #DC2626}
-.kl{font-size:10px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:#aaa;margin-bottom:6px}
+.kl{font-size:10px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:rgba(255,255,255,.45);margin-bottom:6px}
 .kv{font-size:22px;font-weight:800}
 .al{border-radius:8px;padding:12px 16px;font-size:13px;margin-bottom:14px;line-height:1.6;border-left:4px solid}
 .alc{background:#FEF2F2;border-color:#DC2626;color:#7F1D1D}
@@ -67,8 +67,8 @@ tr:hover td.fc{background:#FAFAFA}
 .a1{color:#16A34A;font-weight:700}.a5{color:#D97706;font-weight:600}.a0{color:#D1D5DB}.ax{color:#E9E9E9}
 .dot{display:inline-block;width:7px;height:7px;border-radius:50%;margin-right:5px}
 .dg2{background:#16A34A}.da2{background:#D97706}.dr2{background:#DC2626}.dn2{background:#D1D5DB}
-.ft{background:#F5F5F5;border-top:1px solid #E5E5E5;color:#aaa;font-size:11px;padding:16px 32px;display:flex;align-items:center;justify-content:space-between}
-.ft a{color:#E8642A;text-decoration:none}
+.ft{background:#0D2137;border-top:none;color:rgba(255,255,255,.4);font-size:11px;padding:16px 32px;display:flex;align-items:center;justify-content:space-between}
+.ft a{color:#2B8FD4;text-decoration:none}
 @media(max-width:720px){.og,.kr{grid-template-columns:repeat(2,1fr)}.mn,.dh{padding-left:16px;padding-right:16px}.nav{padding:0 16px}}
 </style>
 </head>
@@ -169,7 +169,7 @@ function doBC(co) {
     var rcc = c.at_risk > c.enrolled * 0.5 ? "kcd" : "kca";
     var zcc = c.zero > 0 ? "kcd" : "kca";
     var html = '<div class="kr">';
-    html += '<div class="kc kca"><div class="kl">Enrolled</div><div class="kv c0">' + c.enrolled + '</div></div>';
+    html += '<div class="kc kca"><div class="kl">Enrolled</div><div class="kv" style="color:#2B8FD4">' + c.enrolled + '</div></div>';
     html += '<div class="kc ' + rcc + '"><div class="kl">Avg mandatory score</div><div class="kv ' + avc + '">' + c.avg.toFixed(1) + '%</div></div>';
     html += '<div class="kc ' + rcc + '"><div class="kl">At risk (&lt;65%)</div><div class="kv cd">' + c.at_risk + '</div></div>';
     html += '<div class="kc ' + zcc + '"><div class="kl">Zero score</div><div class="kv ' + (c.zero > 0 ? "cd" : "c0") + '">' + c.zero + '</div></div>';
